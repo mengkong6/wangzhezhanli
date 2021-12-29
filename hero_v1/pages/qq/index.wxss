@@ -1,0 +1,17 @@
+/* miniprogram/pages/home/index.wxss */
+
+.heroDiv {
+  position: relative;
+  display: flex;
+  padding: 20rpx 0 30rpx;
+  transition-duration: 0s;
+  flex-direction: column;
+}
+
+.heroImg {
+	margin: 0 auto;
+	width: 83px;
+	height: 83px;
+	border: 2px solid #258DF2;
+	border-radius: 10px 0 10px 0;
+}

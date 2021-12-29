@@ -1,0 +1,41 @@
+{
+	"pages": [
+		"pages/qq/index",
+		"pages/wx/index",
+		"pages/about/home/home",
+		"pages/about/log/log",
+		"pages/about/introduce/introduce"
+	],
+	"window": {
+		"backgroundColor": "#F6F6F6",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#F6F6F6",
+		"navigationBarTitleText": "战力助手",
+		"navigationBarTextStyle": "black"
+	},
+	"sitemapLocation": "sitemap.json",
+	"style": "v2",
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#000",
+		"backgroundColor": "#fff",
+		"list": [{
+				"text": "扣扣",
+				"pagePath": "pages/qq/index",
+				"iconPath": "images/tabbar/qq.png",
+				"selectedIconPath": "images/tabbar/qq_cur.png"
+			},{
+				"text": "微信",
+				"pagePath": "pages/wx/index",
+				"iconPath": "images/tabbar/wx.png",
+				"selectedIconPath": "images/tabbar/wx_cur.png"
+			},
+			{
+				"text": "关于",
+				"pagePath": "pages/about/home/home",
+				"iconPath": "images/tabbar/about.png",
+				"selectedIconPath": "images/tabbar/about_cur.png"
+			}
+		]
+	}
+}

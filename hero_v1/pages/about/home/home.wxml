@@ -1,0 +1,33 @@
+<scroll-view scroll-y class="scrollPage">
+	
+	<view class="UCenter-bg">
+		<view class="flex justify-center">
+			<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="cu-btn round bg-green shadow" wx:if="{{!hasUserInfo && canIUse}}">点击登录</button>
+			<block wx:else>
+				<view class="text-center">
+					<view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+					<view class="padding">{{userInfo.nickName}}</view>
+				</view>
+			</block>
+		</view>
+	</view>
+
+	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+		<view class="cu-item arrow">
+			<navigator class="content" url="/pages/about/introduce/introduce" hover-class="none">
+				<text class="cuIcon-weixin text-green"></text>
+				<text class="text-grey">\t对接说明</text>
+			</navigator>
+		</view>
+
+		<view class="cu-item arrow">
+			<navigator class="content" url="/pages/about/log/log" hover-class="none">
+				<text class="cuIcon-formfill text-green"></text>
+				<text class="text-grey">\t更新日志</text>
+			</navigator>
+		</view>
+	
+	</view>
+	
+</scroll-view>
