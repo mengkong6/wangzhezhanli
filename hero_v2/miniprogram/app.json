@@ -1,0 +1,55 @@
+{
+  "entryPagePath": "pages/qq/index",
+  "pages": [
+    "pages/qq/index",
+    "pages/wx/index",
+    "pages/rename/rename",
+    "pages/about/home/home",
+    "pages/about/log/log",
+    "pages/about/introduce/introduce",
+    "pages/web-view/web-view",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "战力助手",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true,
+  "cloud": true,
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "安卓",
+        "pagePath": "pages/qq/index",
+        "iconPath": "images/tabbar/and.png",
+        "selectedIconPath": "images/tabbar/and_cur.png"
+      },
+      {
+        "text": "苹果",
+        "pagePath": "pages/wx/index",
+        "iconPath": "images/tabbar/mac.png",
+        "selectedIconPath": "images/tabbar/mac_cur.png"
+      },
+      {
+        "text": "改名",
+        "pagePath": "pages/rename/rename",
+        "iconPath": "images/tabbar/list.png",
+        "selectedIconPath": "images/tabbar/list_cur.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/home/home",
+        "iconPath": "images/tabbar/my.png",
+        "selectedIconPath": "images/tabbar/my_cur.png"
+      }
+    ]
+  }
+}

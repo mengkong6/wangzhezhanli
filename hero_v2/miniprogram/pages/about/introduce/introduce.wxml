@@ -1,0 +1,73 @@
+<view class="padding text-center">
+	<view class="padding-xl radius shadow-blur bg-green margin-top bg-img">
+		<view class="text-xl">功能介绍</view>
+	</view>
+</view>
+
+<view>
+	<view class="cu-bar">
+		<view class="action">
+			<text class="cuIcon-titles text-green"></text>
+			<text class="text-xl text-bold">1、为什么选择我？</text>
+		</view>
+	</view>
+
+	<view class="padding">
+		<view class="padding-xl radius shadow bg-white">
+			<text>喜欢就用，没有任何理由，如果你觉得别人的好，你也可以选择别人的</text>
+		</view>
+	</view>
+</view>
+
+<view>
+	<view class="cu-bar">
+		<view class="action">
+			<text class="cuIcon-titles text-green"></text>
+			<text class="text-xl text-bold">2、对接公众号</text>
+		</view>
+	</view>
+
+	<view class="padding">
+		<view class="padding-xl radius shadow bg-white">
+			<text>小程序ID：wx0388b790677eddc7\n</text>
+			如下图所示(点图片可放大)，进行第四步的时候，输入上述ID即可，然后你就可以在你的公众号使用本小程序啦！
+			<image src="https://6d65-mengkong-h5lan-1251988367.tcb.qcloud.la/images/weixin.png" bindtap="previewImage" mode="widthFix"
+			 data-src="https://6d65-mengkong-h5lan-1251988367.tcb.qcloud.la/images/weixin.png"></image>
+		</view>
+	</view>
+</view>
+
+<view>
+	<view class="cu-bar">
+		<view class="action">
+			<text class="cuIcon-titles text-green"></text>
+			<text class="text-xl text-bold">3、查询接口</text>
+		</view>
+	</view>
+
+	<view class="padding">
+		<view class="padding-xl radius shadow bg-white">
+			<text>通用接口，内置文字版、图片版、公众号版\n</text>
+			<text>官网：www.sapi.run\n</text>
+			<text>源码联系VX：hongbao1808</text>
+		</view>
+	</view>
+	
+</view>
+
+
+<view>
+	<view class="cu-bar">
+		<view class="action">
+			<text class="cuIcon-titles text-green"></text>
+			<text class="text-xl text-bold">4、注意事项</text>
+		</view>
+	</view>
+
+	<view class="padding">
+		<view class="padding-xl radius shadow bg-white">
+			接口均来自网络，我也是一名白嫖怪，现在继续让你们白嫖，分享给真正需要的小伙伴吧。
+		</view>
+	</view>
+	
+</view>

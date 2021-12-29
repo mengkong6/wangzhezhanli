@@ -1,0 +1,206 @@
+<view class="cu-timeline">
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.1.9</view>
+				<view class="cu-tag line-white">2021/09/18</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、新增，实时战力\n</text>
+				<text>2、修复，用户登录\n</text>
+				<text>3、优化，用户分享\n</text>
+				<text>4、删除，战力预测\n</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.1.7</view>
+				<view class="cu-tag line-white">2021/09/04</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、新增，战力预测\n</text>
+				<text>2、删除，重复名广告\n</text>
+				<text>3、优化，界面UI调整\n</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.1.5</view>
+				<view class="cu-tag line-white">2021/08/10</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、优化，开屏提示仅展示一次\n</text>
+				<text>2、新增，轮播图跳转\n</text>
+				<text>3、新增，安卓战区修改教程\n</text>
+				<text>4、删除，战区教程广告\n</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.1.2</view>
+				<view class="cu-tag line-white">2021/05/01</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、新增，开屏温馨提示\n</text>
+				<text>2、新增，战力接口公开\n</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.1.1</view>
+				<view class="cu-tag line-white">2021/04/27</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、添加，激励视频</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.1.0</view>
+				<view class="cu-tag line-white">2021/04/27</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、移除，格子广告\n</text>
+				<text>2、移除，公众号广告</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.9</view>
+				<view class="cu-tag line-white">2021/04/21</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、优化，查询效果</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.8</view>
+				<view class="cu-tag line-white">2021/04/14</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、新增，战区教程</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.7</view>
+				<view class="cu-tag line-white">2021/04/09</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、优化，背景图片调整</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.6</view>
+				<view class="cu-tag line-white">2021/04/04</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、新增，苹果战区\n</text>
+				<text>2、新增，重复名生成</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.5</view>
+				<view class="cu-tag line-white">2021/02/28</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、新增，分享页面</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.4</view>
+				<view class="cu-tag line-white">2021/02/16</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、优化，首页封面调整</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.3</view>
+				<view class="cu-tag line-white">2021/02/16</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、新增，微信区</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.2</view>
+				<view class="cu-tag line-white">2021/02/16</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、优化，图片调整</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.1</view>
+				<view class="cu-tag line-white">2021/02/16</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、优化，UI调整</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-green">
+		<view class="bg-green content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-green">v1.0.0</view>
+				<view class="cu-tag line-white">2021/02/16</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<text>1、发布，第一款体验版</text>
+			</view>
+		</view>
+	</view>
+
+</view>

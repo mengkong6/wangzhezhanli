@@ -1,0 +1,45 @@
+<scroll-view scroll-y class="scrollPage">
+
+	<view class="UCenter-bg">
+		<view class="flex justify-center">
+			<button bindtap="getUserInfo" bindgetuserinfo="getUserInfo" class="cu-btn round bg-green shadow"
+				wx:if="{{!hasUserInfo && canIUse}}">点击登录</button>
+			<block wx:else>
+				<view class="text-center">
+					<view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+					<view class="padding">{{userInfo.nickName}}</view>
+				</view>
+			</block>
+		</view>
+	</view>
+
+	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+		<view class="cu-item arrow">
+			<view class="content" bindtap="showAD" data-page="/pages/about/introduce/introduce">
+				<text class="cuIcon-appreciatefill text-green"></text>
+				<text class="text-grey">接口&源码</text>
+			</view>
+		</view>
+
+		<view class="cu-item arrow">
+			<view class="content" bindtap="goDetailPage" data-page="/pages/about/log/log">
+				<text class="cuIcon-formfill text-green"></text>
+				<text class="text-grey">更新日志</text>
+			</view>
+		</view>
+
+		<view class="cu-item arrow">
+			<view class="content">
+				<text class="cuIcon-weixin text-green"></text>
+				<text class="text-grey">微信公众号：干货助手</text>
+			</view>
+		</view>
+
+	<view style="width:100%" wx:if="{{appConfig.ad.bannerAdStatus}}">
+		<ad unit-id="{{appConfig.ad.banner_adUnitId}}"></ad>
+	</view>
+
+	</view>
+
+</scroll-view>

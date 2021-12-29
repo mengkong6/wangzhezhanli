@@ -1,0 +1,57 @@
+<view class="bg-white">
+
+	<view class="padding" wx:if="{{appConfig.ad.bannerAdStatus}}">
+		<ad unit-id="{{appConfig.ad.banner_adUnitId}}"></ad>
+	</view>
+
+  <view class="cu-bar justify-center">
+			<view class="action sub-title">
+				<text class="text-xl text-bold text-blue">战力查询结果</text>
+				<text class="bg-blue" style="width:5rem"></text>
+			</view>
+	</view>
+
+  <view class="text-center" style="margin-left:15px;margin-right:15px;">
+    <view class="flex" style="margin-top:8px">
+      <view class="flex-sub bg-grey padding-sm margin-xs radius">{{heroInfo.alias}}（{{heroInfo.platform}}）</view>
+    </view>
+    <view class="flex">
+      <view class="flex-sub bg-grey padding-sm margin-xs radius">时间：{{heroInfo.updatetime}}</view>
+    </view>
+
+    <view>
+      <view class="flex">
+        <view class="flex-sub bg-grey padding-sm margin-xs radius">荣誉</view>
+        <view class="flex-treble bg-grey padding-sm margin-xs radius">行政区</view>
+        <view class="flex-sub bg-grey padding-sm margin-xs radius">分数</view>
+      </view>
+      <view class="flex">
+        <view class="flex-sub bg-gray padding-sm margin-xs radius">金牌</view>
+        <view class="flex-treble bg-gray padding-sm margin-xs radius">{{heroInfo.province}}</view>
+        <view class="flex-sub bg-gray padding-sm margin-xs radius">{{heroInfo.provincePower}}</view>
+      </view>
+      <view class="flex">
+        <view class="flex-sub bg-gray padding-sm margin-xs radius">银牌</view>
+        <view class="flex-treble bg-gray padding-sm margin-xs radius">{{heroInfo.city}}</view>
+        <view class="flex-sub bg-gray padding-sm margin-xs radius">{{heroInfo.cityPower}}</view>
+      </view>
+      <view class="flex">
+        <view class="flex-sub bg-gray padding-sm margin-xs radius">铜牌</view>
+        <view class="flex-treble bg-gray padding-sm margin-xs radius">{{heroInfo.area}}</view>
+        <view class="flex-sub bg-gray padding-sm margin-xs radius">{{heroInfo.areaPower}}</view>
+      </view>
+
+    </view>
+
+    <view class="flex padding justify-center">
+      <button class="cu-btn bg-green" open-type="share" style="height:30px;width:100px">去分享</button>
+      <button class="cu-btn bg-blue" bindtap="goHome" style="height:30px;width:100px;margin-left:20px">回首页</button>
+      <button class="cu-btn bg-pink" bindtap="openWebView" style="height:30px;width:100px;margin-left:20px">改战区</button>
+    </view>
+  </view>
+
+	<view class="padding" wx:if="{{appConfig.ad.bannerAdStatus}}">
+		<ad unit-id="{{appConfig.ad.banner_adUnitId}}"></ad>
+	</view>
+
+</view>

@@ -1,0 +1,65 @@
+<scroll-view scrollX class="bg-white nav">
+    <view class="flex text-center">
+        <view bindtap="tabSelect" class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" data-id="{{index}}"
+            wx:for="{{nameType}}" wx:key="index">
+            {{nameType[index]}}
+        </view>
+    </view>
+</scroll-view>
+<view class="example">
+    <view class="item">
+        <image mode="widthFix" src="{{examplePic[TabCur].pic_1}}"></image>
+    </view>
+    <view class="item">
+        <image mode="widthFix" src="{{examplePic[TabCur].pic_2}}"></image>
+    </view>
+</view>
+<view class="exampleText">
+    <text>{{nameType[TabCur]}}示例 ▲</text>
+</view>
+
+<view class="padding flex flex-direction" wx:if="{{TabCur==0}}">
+    <button class="cu-btn bg-green margin-tb-sm lg" bindtap="copyName" data-type="kongbai">复制随机空白名</button>
+</view>
+
+<view class="padding flex flex-direction" wx:if="{{TabCur==1}}">
+    <input bindinput="chongfuInput" class="content1 input1" placeholder="请输入重复的昵称(1-5个字符)"
+        placeholderStyle="color:#A9A9A9;" value="{{shuruNu}}"></input>
+    <button class="cu-btn bg-green margin-tb-sm lg" bindtap="copyName" data-type="chongfu">生成/复制重复名</button>
+</view>
+
+<view class="padding flex flex-direction" wx:if="{{TabCur==2}}">
+    <input bindlongpress="longFhRandom" class="content1 input1" disabled="true" placeholder="长按复制，中文自行修改"
+        placeholderStyle="color:#A9A9A9;" value="{{upFhRandom}}"></input>
+    <button class="cu-btn bg-green margin-tb-sm lg" bindtap="copyName" data-type="random">随机生成符号名</button>
+</view>
+
+<view wx:if="{{appConfig.ad.bannerAdStatus}}">
+    <ad unit-id="{{appConfig.ad.banner_adUnitId}}"></ad>
+</view>
+
+<view class="hotFuhao" wx:if="{{TabCur==2}}">
+    <view style="font-size: 36rpx;margin-bottom:20rpx;">
+        <text class="cuIcon-hotfill text-red" style="margin-right:10rpx;"></text>
+        <text>热门符号和昵称(长按复制)</text>
+    </view>
+    <view class="pailie">
+        <view bindlongpress="longHotText" class="gezi" data-text="{{item}}" wx:for="{{arrayFuhao}}" wx:key="key">
+            {{item}}
+        </view>
+    </view>
+</view>
+
+<view class="padding" style="padding-bottom:110rpx;" wx:if="{{TabCur==0||TabCur==1}}">
+    <view class="bg-white">
+        <view class="padding-sm solid-bottom cuIcon-taxi">
+            <text> 常见问题</text>
+        </view>
+        <view class="padding-xs margin-left text-gray" wx:for="{{qas}}" wx:key="index">{{item}}</view>
+    </view>
+</view>
+
+<button class="share" openType="share"
+    style="position:fixed;right:0rpx;bottom:80rpx;width:80rpx;height:80rpx;padding:0;border-radius:0;">
+    <image mode="aspectFit" src="../../images/shareFriends.png" style="width:80rpx;height:80rpx;"></image>
+</button>

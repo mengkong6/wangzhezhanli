@@ -1,0 +1,61 @@
+<view class="text-center bg-white">
+	<swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000"
+		duration="500" indicator-color="#8799a3" indicator-active-color="#0081ff">
+		<swiper-item wx:for="{{appConfig.swiper}}" wx:key="item" data-index="{{index}}"  bindtap="openWebView" >
+			<view class="swiper-item" >
+				<image src="{{item.pic}}" mode="aspectFill" ></image>
+			</view>
+		</swiper-item>
+	</swiper>
+
+	<view>
+		<view class="cu-bar justify-center">
+			<view class="action sub-title">
+				<text class="text-xl text-bold text-blue">苹果两大战区</text>
+				<text class="bg-blue" style="width:5rem"></text>
+			</view>
+		</view>
+
+		<view class="cu-list grid col-4">
+			<view class="heroDiv" wx:for="{{appConfig.heroList}}" wx:key="item" bindtap="showModal" data-hero="{{item.cname}}">
+				<image src="{{item.iconUrl}}" class="heroImg"></image>
+				<text>{{item.cname}}</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-modal {{showDialog?'show':''}}">
+		<view class="cu-dialog">
+			<view class="cu-bar bg-white justify-end">
+				<view class="content">温馨提示</view>
+				<view class="action" bindtap="hideModal">
+					<text class="cuIcon-close text-red"></text>
+				</view>
+			</view>
+
+			<view class="padding-xl">
+				<view>
+					<text>正在查询：{{currHero}}，请选择平台\n</text>
+					<text>数据来自AI识别可能有误，仅供参考</text>
+				</view>
+			</view>
+
+			<view class="cu-bar bg-white">
+				<view class="action margin-0 flex-sub text-blue" bindtap="search" data-type="ios_qq">扣扣大区</view>
+				<view class="action margin-0 flex-sub text-red solid-left " bindtap="hideModal">关闭</view>
+				<view class="action margin-0 flex-sub text-green solid-left" bindtap="search" data-type="ios_wx">微信大区</view>
+			</view>
+
+		</view>
+	</view>
+
+	<button class="share" openType="share"
+		style="position:fixed;right:0rpx;bottom:80rpx;width:80rpx;height:80rpx;padding:0;border-radius:0;">
+		<image mode="aspectFit" src="../../images/shareFriends.png" style="width:80rpx;height:80rpx;"></image>
+	</button>
+
+	<view style="margin: 10px;" wx:if="{{appConfig.ad.bannerAdStatus}}">
+		<ad unit-id="{{appConfig.ad.banner_adUnitId}}"></ad>
+	</view>
+
+</view>
