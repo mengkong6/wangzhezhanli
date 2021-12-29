@@ -41,10 +41,6 @@
 
 https://www.sapi.run/wangzhe/
 
-### 战力接口：
-
-https://www.sapi.run/
-
 
 ### 效果图：
 
@@ -53,6 +49,18 @@ https://www.sapi.run/
 
 
 ## 4、战力查询网站（web_v2）
+
+> 广告位内数据自己替换，直接上传到服务器就可以使用
+
+### 演示站：
+
+http://hero.sapi.run/
+
+### 效果图
+
+![image-20211229233424354](images/image-20211229233424354.png)
+
+![image-20211229233537533](images/image-20211229233537533.png)
 
 
 
